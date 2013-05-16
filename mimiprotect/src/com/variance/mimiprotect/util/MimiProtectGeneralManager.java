@@ -481,12 +481,13 @@ public final class MimiProtectGeneralManager {
 			Settings.setPreference(context, PREFERENCE_USER_SETTING_ID,
 					userSettingStr);
 			return true;
-		} else {
+		} else if (context !=null) {
 			Toast.makeText(context,
 					"Sorry! You cannot update your settings on this phone.",
 					Toast.LENGTH_LONG).show();
 			return false;
 		}
+		return false;
 	}
 
 	public synchronized static void updateUserInformation() {

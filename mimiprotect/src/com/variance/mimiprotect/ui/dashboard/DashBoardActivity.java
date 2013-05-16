@@ -48,6 +48,7 @@ public class DashBoardActivity extends MimiProtectActivity {
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		DASH_BOARD_ACTIVITY = this;
 		setContentView(R.layout.mimi_connect_dashboard_layout);
 		checkMimiWalletInstalled();
 		addDashboardControls();
@@ -65,6 +66,9 @@ public class DashBoardActivity extends MimiProtectActivity {
 	}
 
 	public static Context getContext(){
+		if (DASH_BOARD_ACTIVITY == null){
+		//	DASH_BOARD_ACTIVITY = new DashBoardActivity();
+		}
 		return DASH_BOARD_ACTIVITY;
 	}
 	
