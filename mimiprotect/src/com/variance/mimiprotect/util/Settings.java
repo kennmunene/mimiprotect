@@ -28,6 +28,7 @@ import com.variance.mimiprotect.contacts.UserLoginInformation;
 import com.variance.mimiprotect.contacts.Users;
 import com.variance.mimiprotect.contacts.business.BusinessInformation;
 import com.variance.mimiprotect.contacts.business.SmsMessage;
+import com.variance.mimiprotect.ui.dashboard.DashBoardActivity;
 import com.variance.mimiprotect.widget.FastDialContacts;
 import com.variance.vjax.android.VObjectMarshaller;
 import com.variance.vjax.xml.VDocument;
@@ -186,7 +187,7 @@ public class Settings {
 	/**
 	 * IP for actual connection to be set here
 	 */
-	public static final String IP_ADDRESS = DEVELOPMENT_IP_AMAZON_EC2;
+	public static final String IP_ADDRESS = DEVELOPMENT_IP_SERVER;
 	public static final String MIMI_PROTECT_SERVER_IP = DEVELOPMENT_IP_MIMI_NETWORK_ADDRESS;
 
 	/**
@@ -196,7 +197,7 @@ public class Settings {
 	private static volatile double currentLongitude = 0.0;
 	private static volatile double currentLatitude = 0.0;
 
-	private static String port = "80";
+	private static String port = "8484";
 	private static String context = "variance";
 	private static String contactSharedUrl = "contactshare";
 	private static String contactRequestUrl = "contactrequest";
@@ -1151,6 +1152,15 @@ public class Settings {
 		if (sessionId_ == null) {
 			synchronized (Settings.class) {
 				sessionId_ = sessionID;
+				if(sessionID == null && DashBoardActivity.getContext() !=null){
+					
+					SharedPreferences pref = PreferenceManager.getDefaultSharedPreferences(DashBoardActivity.getContext());
+				String stored = pref.getString("sessionID", null);
+				if (stored!=null && !stored.equalsIgnoreCase("null") && stored.length() > 0){
+					sessionID = stored;
+					sessionId_ = sessionID;
+				}
+				}
 			}
 		}
 		return sessionId_;
@@ -1235,6 +1245,12 @@ public class Settings {
 		// we only initialize this if we set session initialization
 		if (sessionIsInitializing) {
 			Settings.sessionID = sessionID;
+			//save the sessionID, it seems to be lost when another app is called
+			SharedPreferences pref = PreferenceManager.getDefaultSharedPreferences(context);
+			Editor editor = pref.edit();
+			editor.putString("sessionID", sessionID);
+			editor.commit();
+			editor = null;
 			sessionIsInitializing = false;
 			Settings.class.notifyAll();
 		}

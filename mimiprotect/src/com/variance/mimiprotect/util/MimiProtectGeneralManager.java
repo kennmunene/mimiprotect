@@ -254,6 +254,7 @@ public final class MimiProtectGeneralManager {
 	}
 
 	private static UserSetting getSavedUserSetting() {
+		Log.i("MiMiGeneralManager", "context"+context+" "+PREFERENCE_USER_SETTING_ID);
 		String loadUserSettingStr = Settings.getPreference(context,
 				PREFERENCE_USER_SETTING_ID);
 		if (loadUserSettingStr != null) {

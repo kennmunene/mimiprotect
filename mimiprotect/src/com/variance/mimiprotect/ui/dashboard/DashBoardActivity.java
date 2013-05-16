@@ -1,6 +1,7 @@
 package com.variance.mimiprotect.ui.dashboard;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.AsyncTask;
@@ -63,6 +64,10 @@ public class DashBoardActivity extends MimiProtectActivity {
 		return chatManager;
 	}
 
+	public static Context getContext(){
+		return DASH_BOARD_ACTIVITY;
+	}
+	
 	public synchronized boolean isHasBusinessPhonebook() {
 		Log.e("hasBusinessPhonebook", hasBusinessPhonebook + "");
 		return hasBusinessPhonebook;

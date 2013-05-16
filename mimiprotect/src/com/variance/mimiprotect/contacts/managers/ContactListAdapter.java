@@ -256,6 +256,7 @@ public class ContactListAdapter extends ArrayAdapter<Contact> {
 
 			public ChatStatus doTask(String... params) {
 				if (DashBoardActivity.DASH_BOARD_ACTIVITY.getChatManager() != null) {
+					Log.i("ContactListAdapter ChatStatus","contact is "+contact);
 					Log.i("Checking chat status for",
 							"for " + contact.getName());
 					ChatStatus status = null;

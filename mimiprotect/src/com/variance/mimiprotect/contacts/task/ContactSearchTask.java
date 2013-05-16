@@ -41,7 +41,7 @@ public class ContactSearchTask extends
 	protected void onPostExecute(String result) {
 		try {
 			if (result == null || result.equals("")) {
-				Toast.makeText(context,
+	 			Toast.makeText(context,
 						"Sorry! There is no internet Connection.",
 						Toast.LENGTH_LONG).show();
 				return;
@@ -67,12 +67,26 @@ public class ContactSearchTask extends
 	protected String doInBackground(SearchParameter... arg0) {
 		try {
 			Log.e("ContactSearchTask:", "called on cache load");
-			return HttpRequestManager.doRequest(Settings.getSearchContactUrl(),
-					Settings.makeAESSearchParameter(arg0[0]), context);
+			if (arg0[0] != null && context != null) {
+				try {
+					String url = Settings.getSearchContactUrl();
+					if(Settings.getSessionID() == null){
+						return null;
+					}
+					Log.i("ContactSearchTask", url);
+					return HttpRequestManager.doRequest(
+							Settings.getSearchContactUrl(),
+							Settings.makeAESSearchParameter(arg0[0]), context);
+				} catch (Exception e) {
+				}
+			} else {
+				return null;
+			}
 		} catch (Exception e) {
 			Log.e("log_tag", "Error converting result " + e.toString());
 			return "";
 		}
+		return null;
 	}
 
 	private void loadCustomView(String result) {
