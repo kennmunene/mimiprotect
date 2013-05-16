@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@null"
+    android:orientation="vertical" >
+    <TextView
+        android:id="@+id/call_number_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:drawableLeft="@drawable/mimi_connect_call"
+        android:gravity="center_vertical"
+        android:text="+254897654324"
+        android:textColor="@color/mimiGrey" />
+</LinearLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/mimiClearColor"
+    android:orientation="vertical" >
+    <ListView
+        android:id="@+id/liveLinkRequestsView"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        android:background="@color/mimiClearColor"
+        android:divider="@color/mimiDardkerColor"
+        android:dividerHeight="1dp" />
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/btnLivelinkToContacts"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/mimi_connect_top_button_no_stroke_background"
+        android:orientation="vertical" >
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="20dp"
+            android:background="@null"
+            android:gravity="center"
+            android:text="@string/livelinkToContacts"
+            android:textColor="@color/mimiClearColor" />
+    </LinearLayout>
+</LinearLayout>

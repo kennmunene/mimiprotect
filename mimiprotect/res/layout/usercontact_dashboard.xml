@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/mimiClearColor" >
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/mimiClearColor"
+        android:orientation="vertical" >
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="0.3"
+            android:background="@color/mimiClearColor"
+            android:orientation="horizontal" >
+            <LinearLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="5dp"
+                android:background="@color/mimiClearColor"
+                android:orientation="vertical" >
+                <Button
+                    android:id="@+id/btn_phonebook"
+                    style="@style/DashboardButton"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/mimi_connect_dashboard_phonebook" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:text="My phonebook"
+                    android:textColor="@color/mimiDardkerColor" />
+            </LinearLayout>
+            <LinearLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="5dp"
+                android:background="@color/mimiClearColor"
+                android:orientation="vertical" >
+                <Button
+                    android:id="@+id/btn_livelinks"
+                    style="@style/DashboardButton"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/mimi_connect_dashboard_livelink"
+                    android:textColor="@color/mimiDardkerColor" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:text="Livelinks"
+                    android:textColor="@color/mimiDardkerColor" />
+            </LinearLayout>
+        </RelativeLayout>
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/mimiClearColor"
+            android:orientation="horizontal" >
+            <Button
+                android:id="@+id/btn_company"
+                style="@style/DashboardButton"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="0.5"
+                android:drawableTop="@drawable/mimi_connect_dashboard_office"
+                android:text="Office phonebook"
+                android:textColor="@color/mimiDardkerColor" />
+            <Button
+                android:id="@+id/btn_backup_restore"
+                style="@style/DashboardButton"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="0.5"
+                android:drawableTop="@drawable/mimi_connect_dashboard_backup_restore"
+                android:text="Backup/Restore"
+                android:textColor="@color/mimiDardkerColor" />
+        </LinearLayout>
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/mimiClearColor"
+            android:orientation="horizontal" >
+            <Button
+                android:id="@+id/btn_profile"
+                style="@style/DashboardButton"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="0.5"
+                android:drawableTop="@drawable/mimi_connect_dashboard_profile"
+                android:text="My business card"
+                android:textColor="@color/mimiDardkerColor" />
+            <!-- Messages Button -->
+            <Button
+                android:id="@+id/btn_business_directory"
+                style="@style/DashboardButton"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="0.5"
+                android:drawableTop="@drawable/mimi_connect_dashboard_directory"
+                android:text="Public directory"
+                android:textColor="@color/mimiDardkerColor" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/mimi_connect_two_color_linear_gradient_no_corner"
+    android:orientation="horizontal" >
+    <CheckBox
+        android:id="@+id/cbSelectPersonalContact"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="0.2"
+        android:background="@null"
+        android:gravity="center" />
+    <TextView
+        android:id="@+id/txtSelectPersonalContact"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="0.8"
+        android:background="@null"
+        android:gravity="left|center_vertical"
+        android:text="@string/rbSinglePersonalContact"
+        android:textColor="@color/black" />
+</LinearLayout>

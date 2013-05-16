@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/singlelinkrequestView"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/mimiClearColor"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/mimi_connect_top_clear_button_background"
+        android:orientation="vertical" >
+        <TextView
+            android:id="@+id/requestMessage"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@null"
+            android:gravity="center_vertical|left"
+            android:text="@string/requestMessage"
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:orientation="horizontal" >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="0.5"
+                android:background="@null"
+                android:gravity="center_vertical|left"
+                android:text="Name:"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="0.5"
+                android:background="@null"
+                android:gravity="center_vertical|left"
+                android:hint="name"
+                android:textColor="@color/mimiDardkerColor"
+                android:textSize="15dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:orientation="horizontal" >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="0.5"
+                android:background="@null"
+                android:gravity="center_vertical|left"
+                android:text="Organization:"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+            <TextView
+                android:id="@+id/organization"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="0.5"
+                android:background="@null"
+                android:gravity="center_vertical|left"
+                android:hint="organization"
+                android:textColor="@color/mimiDardkerColor"
+                android:textSize="15dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:orientation="horizontal" >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="0.5"
+                android:background="@null"
+                android:gravity="center_vertical|left"
+                android:text="Title:"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="0.5"
+                android:background="@null"
+                android:gravity="center_vertical|left"
+                android:hint="title"
+                android:textColor="@color/mimiDardkerColor"
+                android:textSize="15dp" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/mimiClearColor"
+        android:orientation="horizontal" >
+        <Button
+            android:id="@+id/btnAcceptRequest"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/mimi_connect_button_background"
+            android:drawableLeft="@drawable/mimi_connect_accept"
+            android:text="Accept"
+            android:textSize="12dp" />
+        <Button
+            android:id="@+id/btnIgnoreRequest"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/mimi_connect_button_background"
+            android:drawableLeft="@drawable/mimi_connect_asterisk"
+            android:text="Ignore"
+            android:textSize="12dp" />
+        <Button
+            android:id="@+id/btnReportRequest"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/mimi_connect_button_background"
+            android:drawableLeft="@drawable/mimi_connect_report"
+            android:text="Report"
+            android:textSize="12dp" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/mimiClearColor"
+    android:orientation="vertical" >
+    <ListView
+        android:id="@+id/contactDetailsView"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        android:divider="@color/grey"
+        android:dividerHeight="1dp" />
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/mimi_connect_top_button_no_stroke_background"
+        android:orientation="vertical" >
+        <Button
+            android:id="@+id/updateContactView"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:background="@null"
+            android:drawableTop="@drawable/mimi_connect_profile_save"
+            android:text="@string/updateContact" />
+    </LinearLayout>
+</LinearLayout>

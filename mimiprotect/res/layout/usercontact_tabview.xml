@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="40dp"
+    android:background="@drawable/mimi_connect_background"
+    android:orientation="horizontal" >
+    <ImageView
+        android:id="@+id/networkState"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/mimi_connect_network_offline" />
+    <TextView
+        android:id="@+id/txtTabViewTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="30dp"
+        android:gravity="center_vertical"
+        android:text="@string/txtMimiProtect"
+        android:textColor="@color/mimiDardkerColor"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+</LinearLayout>

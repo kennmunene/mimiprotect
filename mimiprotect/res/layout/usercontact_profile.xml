@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/mimiClearColor"
+    android:baselineAligned="true"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/mimi_connect_no_corner_clear_button_background"
+        android:orientation="horizontal" >
+        <Button
+            android:id="@+id/btnProfilePrevious"
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="0.1"
+            android:background="@drawable/mimi_connect_previous"
+            android:onClick="handleCloseProfile" />
+        <TextView
+            android:id="@+id/profilePhoneNumber"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="0.7"
+            android:background="@drawable/mimi_profile_edittext"
+            android:gravity="center" />
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="10dp"
+            android:layout_weight="0.1"
+            android:background="@drawable/mimi_connect_addphone"
+            android:onClick="handleAddPhoneNumber" />
+    </LinearLayout>
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.75"
+        android:background="@color/mimiClearColor" >
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/mimiClearColor"
+            android:orientation="vertical" >
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:background="@drawable/mimi_connect_profile" />
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="vertical" >
+                    <EditText
+                        android:id="@+id/txtFirstName"
+                        android:layout_width="fill_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/mimi_profile_edittext_no_corners"
+                        android:hint="@string/hintSurname"
+                        android:inputType="textCapSentences" />
+                    <EditText
+                        android:id="@+id/txtLastName"
+                        android:layout_width="fill_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/mimi_profile_edittext_no_corners"
+                        android:hint="@string/hintOthername"
+                        android:inputType="textCapSentences" />
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:background="@color/mimiClearColor"
+                        android:orientation="horizontal" >
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="15dp"
+                            android:layout_weight="0.4"
+                            android:background="@color/mimiClearColor"
+                            android:gravity="center_vertical"
+                            android:text="@string/hintOrganization"
+                            android:textSize="16dp" />
+                        <EditText
+                            android:id="@+id/txtOrganization"
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="0.6"
+                            android:background="@drawable/mimi_profile_edittext"
+                            android:hint="@string/hintOrganization"
+                            android:inputType="textCapSentences" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:background="@color/mimiClearColor"
+                        android:orientation="horizontal" >
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="15dp"
+                            android:layout_weight="0.4"
+                            android:background="@color/mimiClearColor"
+                            android:gravity="center_vertical"
+                            android:text="@string/hintTitle"
+                            android:textSize="16dp" />
+                        <EditText
+                            android:id="@+id/txtTitle"
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="0.6"
+                            android:background="@drawable/mimi_profile_edittext"
+                            android:hint="@string/hintTitle"
+                            android:inputType="textCapSentences" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="vertical" >
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/mimi_connect_top_button_no_stroke_background"
+                        android:orientation="horizontal" >
+                        <TextView
+                            android:id="@+id/profileEmail"
+                            android:layout_width="0dp"
+                            android:layout_height="45dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:background="@null"
+                            android:gravity="center_vertical"
+                            android:text="My Phone Numbers" />
+                        <Button
+                            android:id="@+id/btnAddPhoneNumber"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center_vertical"
+                            android:background="@drawable/mimi_connect_addphone"
+                            android:gravity="center"
+                            android:onClick="handleAddPhoneNumber" />
+                        <Button
+                            android:id="@+id/btnShowMorePhoneNumbers"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="20dp"
+                            android:background="@drawable/mimi_connect_more"
+                            android:gravity="center"
+                            android:onClick="viewMorePhoneNumbers" />
+                    </LinearLayout>
+                    <RadioGroup
+                        android:id="@+id/morePhoneNumbers"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/mimi_connect_two_color_linear_gradient_no_corner"
+                        android:orientation="vertical"
+                        android:visibility="gone" >
+                    </RadioGroup>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="vertical" >
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/mimi_connect_top_button_no_stroke_background"
+                        android:orientation="horizontal" >
+                        <TextView
+                            android:id="@+id/profileEmail"
+                            android:layout_width="0dp"
+                            android:layout_height="45dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:background="@null"
+                            android:gravity="center_vertical"
+                            android:text="My Email Addresses" />
+                        <Button
+                            android:id="@+id/btnAddEmail"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center_vertical"
+                            android:background="@drawable/mimi_connect_addemail"
+                            android:gravity="center"
+                            android:onClick="handleAddEmailAddress" />
+                        <Button
+                            android:id="@+id/btnShoreMoreAddresses"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="20dp"
+                            android:background="@drawable/mimi_connect_more"
+                            android:gravity="center"
+                            android:onClick="viewMoreEmailAddresses" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/moreEmailAddresses"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/mimi_connect_two_color_linear_gradient_no_corner"
+                        android:orientation="vertical"
+                        android:visibility="gone" >
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp" >
+                    <TextView
+                        android:id="@+id/profilePassword"
+                        android:layout_width="fill_parent"
+                        android:layout_height="40dp"
+                        android:layout_weight="0.6"
+                        android:background="@drawable/mimi_profile_edittext_no_corners"
+                        android:hint="@string/hintPassword"
+                        android:text="*********" />
+                    <Button
+                        android:id="@+id/btnChangeProfilePassword"
+                        android:layout_width="40dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0.4"
+                        android:background="@drawable/mimi_connect_editimage"
+                        android:gravity="center"
+                        android:onClick="handleChangePassword" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/mimiColor"
+        android:baselineAligned="false"
+        android:orientation="horizontal" >
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="1dp"
+            android:layout_weight="0.25"
+            android:background="@drawable/mimi_connect_top_button_no_stroke_background"
+            android:onClick="handleSaveProfile"
+            android:orientation="vertical" >
+            <ImageView
+                android:id="@+id/btnSaveProfileImage"
+                android:layout_width="50dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="0dp"
+                android:gravity="center"
+                android:src="@drawable/mimi_connect_profile_save" />
+            <TextView
+                android:id="@+id/btnSaveProfile"
+                android:layout_width="fill_parent"
+                android:layout_height="25dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@null"
+                android:gravity="center"
+                android:text="@string/saveProfile"
+                android:textColor="@color/white"
+                android:textSize="12dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="1dp"
+            android:layout_weight="0.3"
+            android:background="@drawable/mimi_connect_top_button_no_stroke_background"
+            android:onClick="handleShareContactAsQrCode"
+            android:orientation="vertical" >
+            <ImageView
+                android:id="@+id/btnShareContactAsQrImage"
+                android:layout_width="50dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="0dp"
+                android:gravity="center"
+                android:src="@drawable/mimi_connect_qr" />
+            <TextView
+                android:id="@+id/btnShareContactAsQr"
+                android:layout_width="fill_parent"
+                android:layout_height="25dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@null"
+                android:gravity="center"
+                android:text="@string/shareContactAsQrCode"
+                android:textColor="@color/white"
+                android:textSize="12dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="1dp"
+            android:layout_weight="0.45"
+            android:background="@drawable/mimi_connect_top_button_no_stroke_background"
+            android:onClick="handleSendProfileContact"
+            android:orientation="vertical" >
+            <ImageView
+                android:id="@+id/btnSendProfileContactImage"
+                android:layout_width="50dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="0dp"
+                android:gravity="center"
+                android:src="@drawable/mimi_connect_send_businesscard" />
+            <TextView
+                android:id="@+id/btnSendProfileContact"
+                android:layout_width="fill_parent"
+                android:layout_height="25dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@null"
+                android:gravity="center"
+                android:text="@string/sendYourProfileContact"
+                android:textColor="@color/white"
+                android:textSize="12dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

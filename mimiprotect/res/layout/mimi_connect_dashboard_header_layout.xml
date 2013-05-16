@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="0dp"
+    android:background="@drawable/mimi_connect_top_clear_button_background"
+    android:orientation="horizontal"
+    android:padding="0dp" >
+    <Button
+        android:id="@+id/btnShowActionBar"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="0dp"
+        android:background="@drawable/mimi_connect_actionbar"
+        android:onClick="showActionOptions" />
+    <TextView
+        android:id="@+id/txtDashboardTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:textColor="@color/mimiColor"
+        android:textSize="10dp" />
+</LinearLayout>

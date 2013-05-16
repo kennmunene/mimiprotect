@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/mimiClearColor"
+    android:orientation="vertical" >
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/mimiClearColor"
+        android:orientation="vertical" >
+        <ViewFlipper
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/viewFlipperWizard"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:autoStart="false"
+            android:background="@color/mimiClearColor"
+            android:orientation="vertical" >
+            <LinearLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/mimi_connect_clear_button_background"
+                android:orientation="vertical" >
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="30dp"
+                    android:autoLink="web"
+                    android:gravity="center"
+                    android:text="@string/wizard_backup"
+                    android:textColor="@color/black"
+                    android:textSize="14dp" />
+                <Button
+                    android:id="@+id/btnBackupWizard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/mimi_connect_clear_button_background"
+                    android:onClick="addControls"
+                    android:text="@string/backupcontacts"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <LinearLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/mimi_connect_clear_button_background"
+                android:orientation="vertical" >
+                <TextView
+                    android:id="@+id/inviteFriendsNotOnMimi"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="30dp"
+                    android:gravity="center"
+                    android:text="@string/contactLivelinkOnMimi"
+                    android:textColor="@color/black" />
+                <Button
+                    android:id="@+id/btnLivelinkWithContactsOnMimi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/mimi_connect_clear_button_background"
+                    android:onClick="addControls"
+                    android:text="@string/btnInviteWizard"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <LinearLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/mimi_connect_clear_button_background"
+                android:orientation="vertical" >
+                <TextView
+                    android:id="@+id/livelinkToYourContacts"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="30dp"
+                    android:gravity="center"
+                    android:text="@string/contactLivelinkInvitation"
+                    android:textColor="@color/black" />
+                <Button
+                    android:id="@+id/btnLivelinkRequestOnMyContacts"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/mimi_connect_clear_button_background"
+                    android:onClick="addControls"
+                    android:text="@string/inviteFriendsFromContacts"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </ViewFlipper>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+            <Button
+                android:id="@+id/btnQuitWizard"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="0.5"
+                android:background="@drawable/mimi_connect_clear_button_background"
+                android:onClick="addControls"
+                android:text="@string/btnQuitWizard"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+            <Button
+                android:id="@+id/btnWizardNextOption"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="0.5"
+                android:background="@drawable/mimi_connect_clear_button_background"
+                android:onClick="addControls"
+                android:text="@string/btnWizardNextPage"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

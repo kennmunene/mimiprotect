@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/mimiClearColor"
+    android:orientation="vertical" >
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/mimiClearColor"
+        android:orientation="vertical" >
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="0dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/mimi_connect_top_corner_button_background"
+            android:orientation="horizontal" >
+            <ImageView
+                android:id="@+id/imgBackupRestoreTitle"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.2"
+                android:background="@drawable/mimi_connect_backup"
+                android:gravity="center" />
+            <TextView
+                android:id="@+id/txtBackRestoreTitle"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.8"
+                android:gravity="center_vertical"
+                android:text="@string/txtBackupOptions"
+                android:textColor="@color/mimiGrey"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/llContactsAction"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/mimi_connect_two_color_linear_gradient_no_corner"
+            android:onClick="backupAction"
+            android:orientation="horizontal" >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_weight="0.8"
+                android:gravity="center_vertical"
+                android:text="Contacts"
+                android:textColor="@color/mimiGrey"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+            <RadioButton
+                android:id="@+id/llContactsActionRb"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"
+                android:gravity="center"
+                android:onClick="backupAction" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/llPhotosAction"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/mimi_connect_two_color_linear_gradient_no_corner"
+            android:onClick="backupAction"
+            android:orientation="horizontal" >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_weight="0.8"
+                android:gravity="center_vertical"
+                android:text="Photos"
+                android:textColor="@color/mimiGrey"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+            <RadioButton
+                android:id="@+id/llPhotosActionRb"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"
+                android:gravity="center"
+                android:onClick="backupAction" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/llMusicOrRingtonAction"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/mimi_connect_two_color_linear_gradient_no_corner"
+            android:onClick="backupAction"
+            android:orientation="horizontal" >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_weight="0.8"
+                android:gravity="center_vertical"
+                android:text="Music/Ringtone"
+                android:textColor="@color/mimiGrey"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+            <RadioButton
+                android:id="@+id/llMusicOrRingtonActionRb"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"
+                android:gravity="center"
+                android:onClick="backupAction" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/llDocumentsAction"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/mimi_connect_two_color_linear_gradient_no_corner"
+            android:onClick="backupAction"
+            android:orientation="horizontal" >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_weight="0.8"
+                android:gravity="center_vertical"
+                android:text="Documents"
+                android:textColor="@color/mimiGrey"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+            <RadioButton
+                android:id="@+id/llDocumentsActionRb"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"
+                android:gravity="center"
+                android:onClick="backupAction" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="@string/txtMimiProtectSecurityInfo"
+            android:textColor="@color/mimiGrey"
+            android:textSize="14dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</ScrollView>

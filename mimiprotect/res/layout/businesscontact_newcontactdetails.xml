@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/mimiClearColor"
+    android:orientation="vertical" >
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        android:background="@color/mimiClearColor" >
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@color/mimiClearColor"
+            android:orientation="vertical" >
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/mimi_connect_no_corner_clear_button_background"
+                android:orientation="horizontal" >
+                <Button
+                    android:id="@+id/btnProfilePrevious"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="0.1"
+                    android:background="@drawable/mimi_connect_previous" />
+                <TextView
+                    android:id="@+id/newContact"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="0.7"
+                    android:background="@drawable/mimi_profile_edittext"
+                    android:gravity="center"
+                    android:text="New Contact" />
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="0.1"
+                    android:background="@drawable/mimi_connect_add"
+                    android:onClick="handleAddPhoneNumber" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/mimi_connect_profile_image_background"
+                    android:orientation="vertical" >
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="20dp"
+                        android:background="@drawable/mimi_connect_profile" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+                <EditText
+                    android:id="@+id/newBusinessContactName"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/mimi_profile_edittext"
+                    android:hint="@string/hintBusinessName"
+                    android:inputType="text"
+                    android:width="170dp" />
+                <EditText
+                    android:id="@+id/newBusinessContactOthernames"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/mimi_profile_edittext"
+                    android:hint="@string/hintOthername"
+                    android:inputType="text"
+                    android:width="170dp" />
+                <EditText
+                    android:id="@+id/newBusinessContactPhoneNumber"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/mimi_profile_edittext"
+                    android:hint="@string/hintPhonenumber"
+                    android:inputType="text" />
+                <EditText
+                    android:id="@+id/newBusinessContactEmail"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/mimi_profile_edittext"
+                    android:hint="@string/hintEmail"
+                    android:inputType="text" />
+            </LinearLayout>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey" />
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="10dp"
+                android:autoLink="web"
+                android:textColor="@android:color/black"
+                android:textSize="10dp" />
+        </LinearLayout>
+    </ScrollView>
+    <Button
+        android:id="@+id/btnAddBusinessContact"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/mimi_connect_no_corner_clear_button_top_background"
+        android:text="@string/addContact"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+</LinearLayout>

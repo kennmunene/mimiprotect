@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:baselineAligned="false"
+    android:orientation="vertical"
+    android:padding="0dp" >
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.7"
+        android:background="@drawable/mimi_connect_no_corner_clear_button_background"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:padding="0dp" >
+        <ScrollView
+            android:id="@+id/actionBar"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.85"
+            android:background="@drawable/mimi_connect_top_button_no_stroke_background"
+            android:orientation="vertical"
+            android:padding="0dp"
+            android:visibility="gone" >
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:orientation="vertical"
+                android:padding="0dp" >
+                <Button
+                    android:id="@+id/scheduleMeeting"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/mimi_connect_top_button_no_stroke_warped_background"
+                    android:drawableLeft="@drawable/mimi_connect_schedulemeeting"
+                    android:gravity="center_vertical|left"
+                    android:onClick="scheduleMeeting"
+                    android:text="Schedule Meeting"
+                    android:textColor="@color/white" />
+                <Button
+                    android:id="@+id/viewMeetingAttendants"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/mimi_connect_top_button_no_stroke_warped_background"
+                    android:drawableLeft="@drawable/mimi_connect_businessprofile"
+                    android:gravity="center_vertical|left"
+                    android:onClick="viewMeetingAttendants"
+                    android:text="View Meeting Attendants"
+                    android:textColor="@color/white" />
+                <Button
+                    android:id="@+id/businessStartMeeting"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/mimi_connect_top_button_no_stroke_warped_background"
+                    android:drawableLeft="@drawable/mimi_connect_startmeeting"
+                    android:gravity="center_vertical|left"
+                    android:onClick="doStartMeeting"
+                    android:text="Start Meeting"
+                    android:textColor="@color/white"
+                    android:visibility="gone" />
+                <Button
+                    android:id="@+id/businessSuspendMeeting"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/mimi_connect_top_button_no_stroke_warped_background"
+                    android:drawableLeft="@drawable/mimi_connect_suspendmeeting"
+                    android:gravity="center_vertical|left"
+                    android:onClick="doSuspendMeeting"
+                    android:text="Suspend Meeting"
+                    android:textColor="@color/white"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </ScrollView>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.15"
+            android:background="@drawable/mimi_connect_no_corner_clear_button_background"
+            android:orientation="vertical"
+            android:padding="0dp" >
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/mimi_connect_top_button_no_stroke_background"
+                android:orientation="horizontal" >
+                <Button
+                    android:id="@+id/btnAddBusinessContact"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/mimi_connect_actionbar"
+                    android:onClick="showActionOptions" />
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="35dp"
+                    android:background="@drawable/mimi_profile_edittext"
+                    android:orientation="horizontal" >
+                    <EditText
+                        android:id="@+id/txtMeetingSearch"
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:hint="@string/searchMeeting"
+                        android:inputType="text" />
+                    <Button
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="2dp"
+                        android:background="@drawable/mimi_connect_search"
+                        android:onClick="handleSearch" />
+                </LinearLayout>
+            </LinearLayout>
+            <ScrollView
+                android:id="@+id/mainWindow"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:orientation="vertical"
+                android:padding="0dp" >
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:orientation="vertical" >
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:background="@null"
+                        android:orientation="horizontal"
+                        android:padding="0dp" >
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="0.3"
+                            android:background="@null"
+                            android:gravity="center_vertical"
+                            android:text="Id: "
+                            android:textColor="@color/white"
+                            android:textSize="12dp"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:id="@+id/meetingCode"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="0.7"
+                            android:background="@drawable/mimi_profile_edittext"
+                            android:gravity="center_vertical"
+                            android:textColor="@color/black"
+                            android:textSize="12dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:background="@null"
+                        android:orientation="horizontal"
+                        android:padding="0dp" >
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="0.3"
+                            android:background="@null"
+                            android:gravity="center_vertical"
+                            android:text="Date: "
+                            android:textColor="@color/white"
+                            android:textSize="12dp"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:id="@+id/meetingDate"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="0.7"
+                            android:background="@drawable/mimi_profile_edittext"
+                            android:gravity="center_vertical"
+                            android:textColor="@color/black"
+                            android:textSize="12dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:background="@null"
+                        android:orientation="horizontal"
+                        android:padding="0dp" >
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="0.3"
+                            android:background="@null"
+                            android:gravity="center_vertical"
+                            android:text="Title: "
+                            android:textColor="@color/white"
+                            android:textSize="12dp"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:id="@+id/meetingTitle"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="0.7"
+                            android:background="@drawable/mimi_profile_edittext"
+                            android:gravity="center_vertical"
+                            android:textColor="@color/black"
+                            android:textSize="12dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:orientation="vertical"
+                        android:padding="0dp" >
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:background="@drawable/mimi_connect_top_button_no_stroke_warped_background"
+                            android:gravity="center_vertical"
+                            android:text="Meeting Notes: "
+                            android:textColor="@color/white"
+                            android:textSize="12dp"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:id="@+id/meetingNotes"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginTop="2dp"
+                            android:background="@drawable/mimi_profile_edittext_no_corners"
+                            android:gravity="center_vertical"
+                            android:textColor="@color/black"
+                            android:textSize="12dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+            <LinearLayout
+                android:id="@+id/meetingAttendantsView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@null"
+                android:orientation="vertical"
+                android:padding="0dp"
+                android:visibility="gone" >
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/mimi_connect_top_button_no_stroke_warped_background"
+                    android:gravity="center_vertical"
+                    android:text="Meeting Attendants: "
+                    android:textColor="@color/white"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
+                <ListView
+                    android:id="@+id/meetingAttendants"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="2dp"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/mimiColor"
+        android:baselineAligned="false"
+        android:orientation="horizontal" >
+        <LinearLayout
+            android:id="@+id/businessJoinMeeting"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="1dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/mimi_connect_top_button_no_stroke_background"
+            android:onClick="joinMeeting"
+            android:orientation="vertical"
+            android:visibility="gone" >
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="0dp"
+                android:gravity="center"
+                android:src="@drawable/mimi_connect_joinmeeting" />
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@null"
+                android:gravity="center"
+                android:text="Join Meeting"
+                android:textColor="@color/white"
+                android:textSize="12dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/businessLeaveMeeting"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="1dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/mimi_connect_top_button_no_stroke_background"
+            android:onClick="leaveMeeting"
+            android:orientation="vertical"
+            android:visibility="gone" >
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="0dp"
+                android:gravity="center"
+                android:src="@drawable/mimi_connect_leavemeeting" />
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@null"
+                android:gravity="center"
+                android:text="Leave Meeting"
+                android:textColor="@color/white"
+                android:textSize="12dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

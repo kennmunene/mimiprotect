@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/mimiClearColor"
+    android:baselineAligned="true"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/mimi_connect_no_corner_clear_button_background"
+        android:orientation="horizontal" >
+        <Button
+            android:id="@+id/btnProfilePrevious"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="0.1"
+            android:background="@drawable/mimi_connect_previous"
+            android:onClick="cancelAddNewContact" />
+        <TextView
+            android:id="@+id/newContact"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="0.7"
+            android:background="@drawable/mimi_profile_edittext"
+            android:gravity="center"
+            android:text="New Contact" />
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="10dp"
+            android:layout_weight="0.1"
+            android:background="@drawable/mimi_connect_add"
+            android:onClick="addContact" />
+    </LinearLayout>
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        android:background="@color/mimiClearColor" >
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/mimiClearColor"
+            android:orientation="vertical" >
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:background="@drawable/mimi_connect_profile" />
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey" />
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+                <EditText
+                    android:id="@+id/txtFirstName"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/mimi_profile_edittext_no_corners"
+                    android:hint="@string/hintSurname"
+                    android:inputType="textCapSentences" />
+                <EditText
+                    android:id="@+id/txtLastName"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/mimi_profile_edittext_no_corners"
+                    android:hint="@string/hintOthername"
+                    android:inputType="textCapSentences" />
+                <EditText
+                    android:id="@+id/txtProfileNumber"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/mimi_profile_edittext_no_corners"
+                    android:hint="@string/hintPhonenumber"
+                    android:inputType="phone" />
+                <EditText
+                    android:id="@+id/profileEmail"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/mimi_profile_edittext_no_corners"
+                    android:hint="@string/hintEmail"
+                    android:inputType="textEmailAddress" />
+                <EditText
+                    android:id="@+id/profileCompany"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/mimi_profile_edittext_no_corners"
+                    android:hint="@string/hintCompany"
+                    android:inputType="textCapSentences" />
+                <EditText
+                    android:id="@+id/profileTitle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/mimi_profile_edittext_no_corners"
+                    android:hint="@string/hintTitle"
+                    android:inputType="textCapSentences" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/mimiColor"
+        android:orientation="horizontal" >
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="1dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/mimi_connect_top_button_no_stroke_background"
+            android:onClick="addContactToMyPhonebook"
+            android:orientation="vertical" >
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="0dp"
+                android:gravity="center"
+                android:src="@drawable/mimi_connect_personal_phonebook" />
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="20dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@null"
+                android:gravity="center"
+                android:text="my phonebook"
+                android:textColor="@color/white"
+                android:textSize="12dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:background="@drawable/mimi_connect_top_button_no_stroke_background"
+            android:onClick="addContactToBusinessPhonebook"
+            android:orientation="vertical" >
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="0dp"
+                android:gravity="center"
+                android:src="@drawable/mimi_connect_office_directory" />
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="20dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@null"
+                android:gravity="center"
+                android:text="office phonebook"
+                android:textColor="@color/white"
+                android:textSize="12dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
