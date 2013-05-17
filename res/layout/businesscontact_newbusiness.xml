@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/mimiClearColor"
+    android:baselineAligned="true"
+    android:orientation="vertical" >
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        android:background="@color/mimiClearColor" >
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/mimiClearColor"
+            android:orientation="vertical" >
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/mimi_connect_no_corner_clear_button_background"
+                android:orientation="horizontal" >
+                <Button
+                    android:id="@+id/btnProfilePrevious"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/mimi_connect_previous"
+                    android:onClick="handleCancelNewBusiness" />
+                <TextView
+                    android:id="@+id/newContact"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/mimi_profile_edittext"
+                    android:gravity="center"
+                    android:text="@string/txtNewBusiness" />
+            </LinearLayout>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey" />
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@color/mimiClearColor"
+                android:orientation="vertical" >
+                <EditText
+                    android:id="@+id/businessContactName"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/mimi_connect_no_corner_clear_button_background"
+                    android:drawableRight="@drawable/mimi_connect_asterisk"
+                    android:hint="@string/hintBusinessContactName"
+                    android:inputType="text" />
+                <EditText
+                    android:id="@+id/businessContactCountry"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/mimi_connect_no_corner_clear_button_background"
+                    android:drawableRight="@drawable/mimi_connect_asterisk"
+                    android:hint="@string/hintBusinessContactCountry"
+                    android:inputType="text" />
+                <EditText
+                    android:id="@+id/businessContactAddress"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/mimi_connect_no_corner_clear_button_background"
+                    android:drawableRight="@drawable/mimi_connect_asterisk"
+                    android:gravity="top|left"
+                    android:hint="@string/hintBusinessContactAddress"
+                    android:inputType="textMultiLine"
+                    android:lines="3"
+                    android:scrollHorizontally="false"
+                    android:singleLine="false" />
+                <EditText
+                    android:id="@+id/businessContactPostcode"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/mimi_connect_no_corner_clear_button_background"
+                    android:hint="@string/hintBusinessContactPostcode"
+                    android:inputType="text" />
+                <EditText
+                    android:id="@+id/businessContactWebsite"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/mimi_connect_no_corner_clear_button_background"
+                    android:hint="@string/hintBusinessContactWebsite"
+                    android:inputType="text" />
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/mimi_connect_no_corner_clear_button_background"
+                    android:orientation="horizontal" >
+                    <EditText
+                        android:id="@+id/businessContactPhoneNumber"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0.6"
+                        android:background="@null"
+                        android:drawableRight="@drawable/mimi_connect_asterisk"
+                        android:hint="@string/hintBusinessContactPhone"
+                        android:inputType="phone" />
+                    <Button
+                        android:id="@+id/btnAddBusinessContactPhoneNumber"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/mimi_connect_add" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/mimi_connect_no_corner_clear_button_background"
+                    android:orientation="horizontal" >
+                    <EditText
+                        android:id="@+id/businessContactEmail"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0.6"
+                        android:background="@null"
+                        android:drawableRight="@drawable/mimi_connect_asterisk"
+                        android:hint="@string/hintBusinessContactEmail"
+                        android:inputType="text" />
+                    <Button
+                        android:id="@+id/btnAddBusinessContactEmail"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/mimi_connect_add" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/mimiColor"
+        android:baselineAligned="false"
+        android:orientation="horizontal" >
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="1dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/mimi_connect_top_button_no_stroke_background"
+            android:onClick="cancel"
+            android:orientation="vertical" >
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@null"
+                android:drawableTop="@drawable/mimi_connect_cancel"
+                android:gravity="center"
+                android:text="cancel"
+                android:textColor="@color/white"
+                android:textSize="12dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/btnSaveBusinessContact"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:background="@drawable/mimi_connect_top_button_no_stroke_background"
+            android:onClick="addOfficePhonebook"
+            android:orientation="vertical" >
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@null"
+                android:drawableTop="@drawable/mimi_connect_sign_up"
+                android:gravity="center"
+                android:text="create"
+                android:textColor="@color/white"
+                android:textSize="12dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

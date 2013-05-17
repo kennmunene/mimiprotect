@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/mimi_connect_two_color_linear_gradient_no_corner"
+    android:orientation="vertical" >
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/singlecontactview_contactinfo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@null"
+        android:orientation="horizontal" >
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/singlecontactview_contactinfoview"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:background="@null"
+            android:orientation="horizontal" >
+            <ImageView
+                android:id="@+id/contactImage"
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="0dp"
+                android:background="@null"
+                android:contentDescription="@string/addDetail"
+                android:gravity="center_vertical|left"
+                android:src="@drawable/mimi_connect_contactphoto" />
+            <TextView
+                android:id="@+id/viewContact"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:background="@null"
+                android:gravity="center_vertical|left"
+                android:minHeight="30dp"
+                android:text="@string/btnContact"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/livelinkedContactInviteToChat"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="0dp"
+            android:background="@null"
+            android:contentDescription="@string/addDetail"
+            android:gravity="center"
+            android:src="@drawable/mimi_connect_online"
+            android:visibility="gone" />
+    </LinearLayout>
+    <!-- Should always be disabled if not business listing -->
+    <TextView
+        android:id="@+id/businessTicker"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:lines="1"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:scrollHorizontally="true"
+        android:text="@string/btnContact"
+        android:textColor="@color/btnblue"
+        android:textSize="15dp"
+        android:visibility="gone" />
+    <!-- should be disabled if not a discovery contact -->
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/firstDegreeConnectionDetails"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:background="@null"
+        android:orientation="vertical"
+        android:visibility="gone" >
+        <TextView
+            android:id="@+id/firstDegreeContactTitle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:text="@string/btnContact"
+            android:textColor="@color/mimiColor"
+            android:textSize="15dp" />
+        <TextView
+            android:id="@+id/firstDegreeContactOrganization"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:text="@string/btnContact"
+            android:textColor="@color/mimiColor"
+            android:textSize="15dp" />
+        <TextView
+            android:id="@+id/firstDegreeContactDiscoveredFrom"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:text="@string/btnContact"
+            android:textColor="@color/mimiDardkerColor"
+            android:textSize="15dp" />
+    </LinearLayout>
+</LinearLayout>

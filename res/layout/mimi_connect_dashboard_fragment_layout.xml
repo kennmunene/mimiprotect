@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.variance.mimiprotect.ui.dashboard.DashboardLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_weight="1"
+    android:background="@color/mimiClearColor" >
+    <!-- News Feed Button -->
+    <Button
+        android:id="@+id/btn_phonebook"
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/mimi_connect_dashboard_personal_phonebook"
+        android:text="My phonebook"
+        android:textColor="@color/mimiDardkerColor" />
+    <Button
+        android:id="@+id/btn_livelinks"
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/mimi_connect_dashboard_livelink"
+        android:text="Livelinks"
+        android:textColor="@color/mimiDardkerColor" />
+    <!-- Friends Button -->
+    <Button
+        android:id="@+id/btn_company"
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/mimi_connect_dashboard_office_directory"
+        android:text="Office phonebook"
+        android:textColor="@color/mimiDardkerColor" />
+    <!-- Places Button -->
+    <Button
+        android:id="@+id/btn_discover"
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/mimi_connect_dashboard_backuprestore"
+        android:text="Discover"
+        android:textColor="@color/mimiDardkerColor" />
+    <!-- Events Button -->
+    <Button
+        android:id="@+id/btn_profile"
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/mimi_connect_dashboard_profile"
+        android:text="My business card"
+        android:textColor="@color/mimiDardkerColor" />
+    <!-- Messages Button -->
+    <Button
+        android:id="@+id/btn_business_directory"
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/mimi_connect_dashboard_business_directory"
+        android:text="Public directory"
+        android:textColor="@color/mimiDardkerColor" />
+</com.variance.mimiprotect.ui.dashboard.DashboardLayout>

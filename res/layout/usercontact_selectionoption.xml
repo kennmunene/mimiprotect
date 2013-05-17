@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/mimiClearColor"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:id="@+id/searchPersonalContactsController"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/mimi_connect_no_corner_clear_button_top_background"
+        android:orientation="horizontal" >
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@drawable/mimi_profile_edittext"
+            android:orientation="horizontal" >
+            <EditText
+                android:id="@+id/txtSearchGeneralPersonalContact"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="@string/hintSearchPersonalContacts"
+                android:inputType="text" />
+            <Button
+              android:id="@+id/btnSearchContacts"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="2dp"
+                android:background="@drawable/mimi_connect_search" />
+        </LinearLayout>
+        <Button
+            android:id="@+id/btnLoadPreviousFromContactList"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/mimi_connect_previous" />
+        <Button
+            android:id="@+id/btnLoadNextFromContactList"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/mimi_connect_next" />
+    </LinearLayout>
+    <ListView
+        android:id="@+id/usercontact_selectionOption_View"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.7"
+        android:background="@color/mimiClearColor"
+        android:divider="@color/grey"
+        android:dividerHeight="1dp" />
+    <LinearLayout
+        android:id="@+id/contactSelectionController"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:background="@color/mimiColor"
+        android:orientation="horizontal" >
+        <CheckBox
+            android:id="@+id/usercontact_selectAllContactCb"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="1dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/mimi_connect_top_button_no_stroke_background"
+            android:checked="false"
+            android:gravity="center"
+            android:text="@string/selectAllTxt"
+            android:textColor="@color/white" />
+        <Button
+            android:id="@+id/usercontact_onSelectionComplete"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.5"
+            android:background="@drawable/mimi_connect_top_button_no_stroke_background"
+            android:minWidth="120dp"
+            android:text="@string/onContactsSelected"
+            android:textColor="@color/white" />
+    </LinearLayout>
+</LinearLayout>

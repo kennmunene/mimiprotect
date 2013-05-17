@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<resources>
+    <string name="app_name">mimi protect</string>
+    <color name="bgColor">#c7c7c7</color>
+    <color name="waitColor">#0000ff</color>
+    <color name="textColor">#000000</color>
+    <color name="bg2Color">#adadad</color>
+    <color name="white">#FFFFFF</color>
+    <color name="blue">#ffffff</color>
+    <color name="splash">#0D4F9E</color>
+    <color name="tabColor">#0000ee</color>
+    <color name="blueLight">#bbbbbb</color>
+    <color name="red">#ff0000</color>
+    <color name="grey">#eeeeee</color>
+    <color name="mimiColor">#FF6600</color>
+    <color name="mimiTransparentColor">#80FF6600</color>
+    <color name="mimiTransparentClearColor">#80F1F5F7</color>
+    <color name="mimiTransparentDarkerColor">#808A8A88</color>
+    <color name="mimiClearColor">#F1F5F7</color>
+    <color name="mimiDardkerColor">#8A8A88</color>
+    <color name="mimiGrey">#6A6A6A</color>
+    <color name="grey0">#cccccc</color>
+    <color name="darkGrey">#aaaaaa</color>
+    <color name="black">#000000</color>
+    <color name="btnblue">#70B8FF</color>
+    <color name="btnDarkBlue">#356488</color>
+    <color name="headerColor">#B6B7B8</color>
+    <color name="groupHeaderColor">#f6f7f8</color>
+    <color name="btnSignupBlue">#A0A0E6</color>
+    <dimen name="widget_margin">8dp</dimen>
+    <string name="versionCode">29</string>
+    <string name="messageSendingFailed">Failed to send message</string>
+    <string name="versionName">1.0.1.0</string>
+    <string name="enableLocalCache">Automayically cache contacts locally. 
+                Contacts are automatically synced with server</string>
+    <string name="enableAutoLogin">Automatically do login on the background. 
+        This enables faster response time, during the loading of the application.</string>
+    <string name="showSplashScreen">Show the mimiprotect splashscreen when app starts.</string>
+    <string name="showDashboard">Show mimiprotect dashboard. 
+        The Dashboard gives you the accessability to the entire mimiprotect features.</string>
+    <string name="lockMimiProtect">Lock mimiprotect to this phone. 
+        The current user is associated with current phone, and any other user is considered as a guest.</string>
+    <string name="saveChatMessages">When enabled, the chat messages are saved locally until you manually delete them.</string>
+    <string name="localCacheSyncPeriod">How often to sync the local cache with server</string>
+    <string name="chatConfigurationMessages">Set up your chat configurations, to be able to connect and chat with your friends.</string>
+    <string name="lastCacheSyncDate">The date the cache was last synced</string>
+    <string name="lblSearch">Enter the name to search</string>
+    <string name="btnSearchProductText">Find Product &#8230;</string>
+    <string name="btnLink">  Live Link</string>
+    <string name="livelinkToContacts">Livelink to Contacts</string>
+    <string name="livelink">Request Livelink</string>
+    <string name="onContactsSelected">On Contact Selected</string>
+    <string name="selectAllTxt">all</string>
+    <string name="btnView">  View Details</string>
+    <string name="searchBusinessPhrase">Search Business</string>
+    <string name="btnWebsite">  Goto Website</string>
+    <string name="mimimobile">mimi mobile money accross the world</string>
+    <string name="requestMessage">Livelink Request Message</string>
+    <string name="btnContact">  My Contact</string>
+    <string name="btnSelectPersonalContactConfirm">Add to Business Contact</string>
+    <string name="btnSelectBusinessContactUsersConfirm">Remove</string>
+    <string name="businessContact_singleContactViewLabel">Business Contact</string>
+    <string name="businessContact_singleContactImageViewDescription">Business Contact Image</string>
+    <string name="btnDeleteContact">Delete</string>
+    <string name="btnDownloadFiles">Download</string>
+    <string name="btnCall">  Call</string>
+    <string name="btnText">  Send Text</string>
+    <string name="mimiprotectCopyrightNotice">\u00a9Mimi Mobile and Variance Inc. 2012. All rights reserved</string>
+    <string name="unlinkTxt">Unlink (Changes to contacts data will not be available!)</string>
+    <string name="fastDialTxt">Add Fast Dial (This appears on the onscreen widget)</string>
+    <string name="btnEmail">  Send E-mail</string>
+    <string name="btnSendContact">  Send Contact</string>
+    <string name="btnNo">Cancel</string>
+    <string name="contactdetailsview">Contact Details</string>
+    <string name="callNumber">Call</string>
+    <string name="businessLabel">Business Listings</string>
+    <string name="searchPhrase">search</string>
+    <string name="searchMeeting">Enter meeting id</string>
+    <string name="personalLabel">Personal Phonebook</string>
+    <string name="btnSearchBizText">Search</string>
+    <string name="wait">Kindly Wait</string>
+    <string name="share">Share Image</string>
+    <string name="shareTxt">Share Your Contacts With</string>
+    <string name="shareWithTxt">This guy</string>
+    <string name="backup_content">Backup content</string>
+    <string name="restore_content">Restore Content</string>
+    <string name="exit">Exit</string>
+    <string name="username">UserName:</string>
+    <string name="password">password:</string>
+    <string name="backup">What do you want to backup</string>
+    <string name="contacts">Contacts</string>
+    <string name="files">Files</string>
+    <string name="all_pictures">All Pictures</string>
+    <string name="all_music">All Music files</string>
+    <string name="restore">What do you want to restore?</string>
+    <string name="search">Enter name to search</string>
+    <string name="confirm_password">Confirm Password:</string>
+    <string name="create_account">Sign Up</string>
+    <string name="editPassword">Change</string>
+    <string name="addDetail">Add</string>
+    <string name="saveProfile">Save</string>
+    <string name="revokeMyLivelink">Revoke Livelinks</string>
+    <string name="updateContact">Save</string>
+    <string name="shareContactAsQrCode">Share As QR</string>
+    <string name="sendYourProfileContact">Send Business Card</string>
+    <string name="btnManualAdd">Add Contact</string>
+    <string name="btnMimiProtectLivelink">Livelink Request</string>
+    <string name="addContact">Add</string>
+    <string name="btnQr">Scan QR Code</string>
+    <string name="btnBusinessCard">Scan Business Card</string>
+    <string name="btnSaveBusinessContact">Save</string>
+    <string name="termsAndConditions">By Clicking Sign up you are indicating that you have read and agree to the following <a href="http://www.mimiprotect.com">Terms of Service</a></string>
+    <string name="select_your_option">Select your option</string>
+    <string name="forgotPassword">Forgot password?</string>
+    <string name="automaticallyLogin">Automatically Login?</string>
+    <string name="backupcontacts">Backup Contacts</string>
+    <string name="btnQuitWizard">Quit</string>
+    <string name="btnWizardNextPage">Next</string>
+    <string name="contactLivelinkInvitation">Some of your contacts are not on MiMi,Invite them to MiMi so 
+        that they can backup their contacts, access their company directory 
+        and live link with you. This service will not cost you any money - 
+        MiMi pays for the sms costs</string>
+    <string name="btnInviteWizard">Connect with friends on MiMi</string>
+    <string name="contactLivelinkOnMimi">Some of your contacts are on MiMi,
+         Live Link with them to always retrieve their most current contact details.
+         Also, by accepting live link requests from your contacts, they will be able to retrieve your contact
+         information from your profile hence they will have your most current details.
+         You can UnLink someone by long pressing on their name and clicking unlink.
+         Once unlinked, they will no longer access your profile</string>
+    <string name="inviteFriendsFromContacts">Invite your friends to mimi</string>
+    <string name="restorecontacts">Restore Contacts</string>
+    <string name="backupfiles">Backup Files</string>
+    <string name="restorefiles">Restore Files</string>
+    <string name="title">Please enter your login details.</string>
+    <string name="login">Login.</string>
+    <string name="new_user">New User?</string>
+    <string name="transparent">0.1</string>
+    <string name="splash_desc">MiMiProtect - The Easy way</string>
+    <string name="signupText">Fill in your details to open an account</string>
+    <string name="email">E-mail:</string>
+    <string name="phoneNumber">Phone Number:</string>
+    <string name="hintUsername">Username/Email</string>
+    <string name="txtMimiProtect">mimi</string>
+    <string name="txtMimiProtectSecurityInfo">All your files and information are stored securely on the mimi cloud.
+             Unauthorised access to your personal information and files will NOT be permitted.</string>
+    <string name="txtBackupOptions">Backup options</string>
+    <string name="txtRestoreOptions">Restore options</string>
+    <string name="txtBackupRestoreTitle">Welcome to mimi protect</string>
+    <string name="txtBackupRestoreMessage">You can backup your contacts and restore them at any time, 
+        keeping your contact information up to date. 
+        Besides, backup your photos, music, documents and access them in any other device.</string>
+    <string name="txtMimiProtectSlogan">STORE,CONNECT,SHARE</string>
+    <string name="hintProfileUsername">Username:</string>
+    <string name="hintSignupUsername">Username</string>
+    <string name="hintOthername">Last Name</string>
+    <string name="hintOrganization">Organization</string>
+    <string name="hintProfileOthername">Other names:</string>
+    <string name="hintSurname">First Name</string>
+    <string name="hintBusinessName">Name</string>
+    <string name="hintProfileSurname">Surname:</string>
+    <string name="hintPhonenumber">Number</string>
+    <string name="hintEmail">E-mail</string>
+    <string name="hintCompany">Organization</string>
+    <string name="hintTitle">Title</string>
+    <string name="hintSearchPersonalContacts">Search</string>
+    <string name="hintPassword">Password</string>
+    <string name="hintBusinessContactName">Business Name</string>
+    <string name="hintBusinessContactCountry">Country</string>
+    <string name="hintBusinessContactAddress">Address</string>
+    <string name="hintBusinessContactPostcode">Postcode</string>
+    <string name="hintBusinessContactPhone">Phone</string>
+    <string name="hintBusinessContactEmail">Email</string>
+    <string name="hintBusinessContactWebsite">Website</string>
+    <string name="hintNewPassword">New Password</string>
+    <string name="hintOldPassword">Old Password</string>
+    <string name="hintNewDetail">New Detail</string>
+    <string name="txtSetAsDefault">Set As Default</string>
+    <string name="cbSelectFromPersonalContact">Select from personal contacts</string>
+    <string name="cbAddNewContact">Add new business contact</string>
+    <string name="rbSinglePersonalContact">Personal Contact</string>
+    <string name="selectFileName">Select file</string>
+    <string name="txtNewBusiness">New Business</string>
+    <string name="hintAddNewDetail">New Detail</string>
+    <string name="hintConfirmPassword">Confirm Password</string>
+    <string name="hintConfirmNewPassword">Confirm New Password</string>
+    <string name="signupbtntext">Sign Up</string>
+    <string name="scancard">Scan Business Card</string>
+    <string name="wizard_backup">Backup your phone contacts to MiMi servers via a secure channel. This information is only available to you. You can access your contacts by signing in to MiMi using an android phone, Blackberry or J2ME phone. We also have a web portal at http://www.mimiprotect.com</string>
+</resources>

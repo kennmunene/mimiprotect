@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/singlecontactview"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/mimiClearColor"
+    android:orientation="horizontal" >
+    <TextView
+        android:id="@+id/contactDetailName"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="0dp"
+        android:layout_weight="0.35"
+        android:background="@drawable/mimi_connect_two_color_linear_gradient_no_corner"
+        android:gravity="center_vertical|left"
+        android:text="@string/btnContact"
+        android:textColor="@color/mimiDardkerColor"
+        android:textSize="12dp" />
+    <TextView
+        android:id="@+id/contactDetailValue_BusinessContact"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="0dp"
+        android:layout_weight="0.65"
+        android:background="@drawable/mimi_connect_two_color_linear_gradient_no_corner"
+        android:gravity="center_vertical|left"
+        android:text="@string/btnContact"
+        android:textColor="@color/btnblue"
+        android:textSize="12dp" />
+    <EditText
+        android:id="@+id/contactDetailValue_PersonalContact"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="0dp"
+        android:layout_weight="0.65"
+        android:background="@drawable/mimi_connect_two_color_linear_gradient_no_corner"
+        android:gravity="center_vertical|left"
+        android:inputType="text"
+        android:text="@string/btnContact"
+        android:textColor="@color/btnblue"
+        android:textSize="12dp" />
+</LinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="0dp" >
+    <Button
+        android:id="@+id/businessMeeting"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/mimi_connect_top_button_no_stroke_warped_background"
+        android:drawableTop="@drawable/mimi_connect_businessmeeting"
+        android:gravity="center"
+        android:onClick="handleBusinessMeeting"
+        android:padding="0dp"
+        android:text="Business Meeting"
+        android:textColor="@color/white" />
+</LinearLayout>
